@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
   <head>
     <title>Código Para Todxs!</title>
     <meta charset="utf-8">
