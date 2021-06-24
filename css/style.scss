@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #FFF;
+
+  --gray-50: #F7F8FA;
+  --gray-100: #E6E8EB;
+  --gray-200: #AFB2B1;
+  --gray-500: #808080;
+  --gray-800: #494D4B;
+
+
+  --pink-100: #f6e8f4;
+  --pink-300: #e16eaf;
+  --pink-400: #7c6080;
+  --pink-500: #f659aa;
+  --pink-600: #973870;
+  --pink-800: #6a1549;
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%; // 15px 
+  }
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%; // 14px 
+  }
+}
+
+body {
+background-color: var(--gray-50);
+}
+
+body, input, textarea, button {
+  font: 500 1rem Inter, sans-serif;
+  color: var(--gray-500);
+}
+
+.headerContainer {
+  background: var(--white);
+  height: 6.5rem;
+  display: flex;
+  align-items: center;
+  padding: 2rem 4rem;
+  border-bottom: 1px solid var(--gray-100);
+}
+
+.pHeader{
+    margin-left: 2rem;
+    padding: 0,25rem 0 0,25rem 2rem;
+    border-left: 1px solid var(--gray-100);
+}
+
+.homepage {
+  padding: 0 2rem;
+  height: calc(65vh - 6.5rem);
+  margin-top: 8.5rem;
+  border: 2px solid var(--pink-600);
+  border-radius: 5px;
+  position: relative;
+  display: inline-block;
+  align-items: center;
+  box-shadow: 0.40rem 0.40rem 0.40rem var(--pink-300);
+
+  text-align: center;
+}
+
+.titulo {
+  color: var(--pink-600);
+}
+
+.slideContainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 70%;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  border-radius: 5px;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 15px;
+  background: var(--pink-600);
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: var(--pink-600);
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.buttonS {
+  width: 6.5rem;
+  height: 2.5rem;
+  background: transparent;
+  border: 1px solid var(--pink-600);
+  border-radius: 0.675rem;
+  font-weight: 400;
+  box-shadow: 0.25rem 0.25rem 0.25rem var(--gray-100);
+  color: var(--pink-600);
+
+  transition: filter 0.2s;
+
+  &:hover {
+    filter: brightness(0.95);
+  }
+}
